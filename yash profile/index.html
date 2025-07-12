@@ -73,7 +73,7 @@
           </li>
 
             <li>
-              <a href="https://drive.google.com/file/d/17-IielGGpBEDOTn-gjhHmsKR2EREFZbj/view?usp=drivesdk" target="_blank" class="btn btn-primary">Download CV</a>
+              <a href="https://drive.google.com/file/d/1EaPMXUjklHP0tRJ2Nb0sLaoI14sV4jx7/view?usp=drivesdk" target="_blank" class="btn btn-primary">Download CV</a>
               
           </li>
         
@@ -481,7 +481,8 @@
       
     <!-- Thank You Popup -->
 <div id="thankYouPopup" style="display:none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0.8); background: white; padding: 30px; border-radius: 12px; box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3); text-align: center; transition: 0.3s ease-in-out; opacity: 0; min-width: 280px;">
-  <h2 style="color: #333; margin-bottom: 10px;">🎉 Thank You! 🎉</h2>
+  <h2 style="color: #333; margin-bottom: 10px;"\> Thank you! Your message has been sent. I’ll get back to you shortly.
+  </h2>
   <p style="color: #666; font-size: 16px; margin-bottom: 20px;">Your message has been sent successfully.</p>
   <div style="display: flex; justify-content: center;">
       <button onclick="closePopup()" style="background-color: red; color: white; padding: 12px 25px; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; transition: 0.2s ease-in-out;">OK</button>
@@ -529,108 +530,222 @@
         - #BLOG
       -->
 
+      <style>
+        .blog .blog-list {
+          list-style: none;
+          padding: 0;
+          display: grid;
+          gap: 30px;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+      
+        .blog-card {
+          background: #fff;
+          padding: 20px;
+          border-radius: 12px;
+          box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+          transition: transform 0.3s;
+        }
+      
+        .blog-card:hover {
+          transform: translateY(-5px);
+        }
+      
+        .card-banner {
+          width: 100%;
+          height: 220px;
+          overflow: hidden;
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      
+        .card-banner img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
+      
+        .card-tag {
+          display: inline-block;
+          margin: 15px 0 10px;
+          color: #0077cc;
+          font-weight: 600;
+          font-size: 14px;
+          text-decoration: none;
+        }
+      
+        .card-title a {
+          color: #222;
+          text-decoration: none;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 1.4;
+        }
+      
+        .section-title {
+          font-size: 32px;
+          margin-bottom: 20px;
+        }
+      
+        .section-subtitle {
+          color: #888;
+          font-size: 16px;
+          margin-bottom: 5px;
+        }
+      </style>
+      
+      <!-- Blog Section -->
       <section class="section blog" id="blog">
         <div class="container">
-
+      
           <p class="section-subtitle">Latest News</p>
-
           <h2 class="h2 section-title">Checkout My Recent Blogs</h2>
-
-         
-
+      
           <ul class="blog-list">
-
+      
             <li>
               <div class="blog-card">
-
                 <figure class="card-banner">
                   <a href="https://medium.com/@moradiyayash9962/how-i-built-an-online-jewelry-store-with-php-and-flutter-6e68c2eede87" target="_blank">
-                    <img src="./assets/images/blog-1.jpg" width="1181" height="843" loading="lazy"
-                      alt="How I Built an Online Jewelry Store Application with PHP and Flutter." class="img-cover">
+                    <img src="./assets/images/blog-1.jpg" alt="Jewelry Store with PHP and Flutter">
                   </a>
                 </figure>
-
-                <a href="https://medium.com/@moradiyayash9962/how-i-built-an-online-jewelry-store-with-php-and-flutter-6e68c2eede87" target="_blank" class="card-tag">Flutter Application Development</a>
-
+                <a href="https://medium.com/@moradiyayash9962/how-i-built-an-online-jewelry-store-with-php-and-flutter-6e68c2eede87" class="card-tag" target="_blank">Flutter Application Development</a>
                 <h3 class="card-title">
                   <a href="https://medium.com/@moradiyayash9962/how-i-built-an-online-jewelry-store-with-php-and-flutter-6e68c2eede87" target="_blank">How I Built an Online Jewelry Store Application with PHP and Flutter.</a>
                 </h3>
-
               </div>
             </li>
-
+      
             <li>
               <div class="blog-card">
-
                 <figure class="card-banner">
                   <a href="https://medium.com/@moradiyayash9962/a-guide-to-supabase-why-i-chose-it-for-various-project-29be9340b2e4" target="_blank">
-                    <img src="./assets/images/blog-2.jpg" width="1181" height="843" loading="lazy"
-                      alt="Website making" class="img-cover">
+                    <img src="./assets/images/blog-2.jpg" alt="Supabase Guide">
                   </a>
                 </figure>
-
-                <a href="https://medium.com/@moradiyayash9962/a-guide-to-supabase-why-i-chose-it-for-various-project-29be9340b2e4" target="_blank" class="card-tag">Web Development</a>
-
+                <a href="https://medium.com/@moradiyayash9962/a-guide-to-supabase-why-i-chose-it-for-various-project-29be9340b2e4" class="card-tag" target="_blank">Web Development</a>
                 <h3 class="card-title">
                   <a href="https://medium.com/@moradiyayash9962/a-guide-to-supabase-why-i-chose-it-for-various-project-29be9340b2e4" target="_blank">A Guide to Supabase: Why I Chose It for My Various Project.</a>
                 </h3>
-
               </div>
             </li>
-
+      
             <li>
               <div class="blog-card">
-
                 <figure class="card-banner">
                   <a href="https://medium.com/@moradiyayash9962/how-i-built-a-faculty-attendance-android-app-with-firebase-d80781d0f2f3" target="_blank">
-                    <img src="./assets/images/blog-3.jpg" width="1181" height="843" loading="lazy"
-                      alt="JAva language use" class="img-cover">
+                    <img src="./assets/images/blog-3.jpg" alt="Faculty Attendance App">
                   </a>
                 </figure>
-
-                <a href="https://medium.com/@moradiyayash9962/how-i-built-a-faculty-attendance-android-app-with-firebase-d80781d0f2f3" target="_blank" class="card-tag">Android Appication Development</a>
-
+                <a href="https://medium.com/@moradiyayash9962/how-i-built-a-faculty-attendance-android-app-with-firebase-d80781d0f2f3" class="card-tag" target="_blank">Android Application Development</a>
                 <h3 class="card-title">
                   <a href="https://medium.com/@moradiyayash9962/how-i-built-a-faculty-attendance-android-app-with-firebase-d80781d0f2f3" target="_blank">How I Built a Faculty Attendance App with Firebase</a>
                 </h3>
-
               </div>
             </li>
-
+      
           </ul>
-
         </div>
       </section>
-
-    </article>
-  </main>
-
-
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer">
-    <div class="container">
-
       
 
-      <ul class="footer-list">
-        <li>
-          <a href="#" class="footer-link">Terms & Condition</a>
-        </li>
+<!-- #FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <ul class="footer-list">
+      <li>
+        <a href="javascript:void(0)" id="openTerms" class="footer-link">Terms & Conditions</a>
+      </li>
+    </ul>
+  </div>
+</footer>
 
-        <li>
-          <a href="#" class="footer-link">Privacy Policy</a>
-        </li>
-      </ul>
+<!-- Terms Modal -->
+<div id="termsModal" style="
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.5);
+  z-index:1000;
+  padding:20px;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:#333;
+">
+  <div style="
+    background:#fff;
+    padding:30px;
+    max-width:650px;
+    max-height:90vh;
+    overflow-y:auto;
+    margin:40px auto;
+    border-radius:16px;
+    position:relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    line-height: 1.6;
+  ">
 
-    </div>
-  </footer>
+    <!-- Close Button -->
+    <button onclick="document.getElementById('termsModal').style.display='none'" 
+      style="
+        position:absolute;
+        top:12px;
+        right:15px;
+        border:none;
+        background:none;
+        font-size:24px;
+        color:#888;
+        cursor:pointer;
+        transition: color 0.2s ease;
+      "
+      onmouseover="this.style.color='#000';"
+      onmouseout="this.style.color='#888';"
+    >&times;</button>
 
+    <!-- Modal Content -->
+    <h2 style="margin-top:0; font-weight:600;">Terms & Conditions</h2>
+    <p><em>Last Updated: May 23, 2025</em></p>
+
+    <h3 style="font-weight:500;">1. Use of Website</h3>
+    <p>This website is intended to showcase my personal work, projects, and skills. You may browse and interact with the content, but any reproduction, distribution, or unauthorized use of materials is strictly prohibited.</p>
+
+    <h3 style="font-weight:500;">2. Intellectual Property</h3>
+    <p>All content on this site — including images, code, text, designs, and logos — is my intellectual property unless otherwise stated. Do not copy, modify, or use these materials without my permission.</p>
+
+    <h3 style="font-weight:500;">3. Contact Form & Communication</h3>
+    <p>Any information you submit via the contact form will only be used to respond to your inquiry. Your data will not be sold or shared with any third parties.</p>
+
+    <h3 style="font-weight:500;">4. Portfolio Projects</h3>
+    <p>Some projects displayed in this portfolio may include client work. They are presented here with permission or under fair portfolio use for demonstration purposes only.</p>
+
+    <h3 style="font-weight:500;">5. Third-Party Links</h3>
+    <p>This portfolio may contain links to third-party websites or tools. I do not control or endorse their content and am not responsible for their privacy or terms.</p>
+
+    <h3 style="font-weight:500;">6. Disclaimer</h3>
+    <p>I strive to keep this website accurate and up to date, but I make no guarantees. Any reliance you place on the information is at your own risk.</p>
+
+    <h3 style="font-weight:500;">7. Changes to These Terms</h3>
+    <p>I reserve the right to update or change these terms at any time. Please review this page periodically to stay informed of any modifications.</p>
+
+    <h3 style="font-weight:500;">8. Contact</h3>
+    <p>If you have any questions about these terms, you can email me at: <strong>yashmoradiya9962@gmail.com</strong></p>
+  </div>
+</div>
+
+<!-- Script -->
+<script>
+  document.getElementById("openTerms").addEventListener("click", function(e) {
+    e.preventDefault();
+    document.getElementById("termsModal").style.display = "block";
+  });
+</script>
 
 
 
